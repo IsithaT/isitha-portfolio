@@ -18,13 +18,14 @@ interface PostData {
 }
 
 interface Props {
-    params: {
+    params: Promise<{
         slug: string
-    }
+    }>
 }
 
-const ProjectPage = ({ params }: Props) => {
-    const postData: PostData[] = getSortedPostsData(projectDir).filter(post => post.slug === params.slug);
+const ProjectPage = async ({ params }: Props) => {
+    const { slug } = await params;
+    const postData: PostData[] = getSortedPostsData(projectDir).filter(post => post.slug === slug);
     
     return (
         <div className="flex flex-col h-screen w-full">
