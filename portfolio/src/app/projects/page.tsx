@@ -40,8 +40,8 @@ const Projects = () => {
                               <img src={post.image} alt={post.title} className="w-full rounded-lg" />
                             </div>
                             
-                            <div className='flex flex-col flex-1'>
-                              <p className='prose prose-xl flex-1'>{post.description}</p>
+                            <div className='flex flex-col flex-1 gap-[15px]'>
+                              <p className='prose prose-xl flex-1 overflow-clip'>{post.description}</p>
                               <Link href={"projects/project/"+post.slug} className='self-center' ><span className='p-[10px] w-[100px] rounded-2xl text-white bg-theme-accent'>Project Article</span></Link>
                             </div>
                         </div>
