@@ -27,9 +27,14 @@ export function getSortedPostsData(directory: string) {
 
         // Combine the data with the id
         return {
-            pageContent,
-            id,
-            ...matterResult.data, // Add the key val pairs from frontmatter
+            id: id,
+            pageContent: pageContent,
+            title: matterResult.data.title,
+            image: matterResult.data.image,
+            description: matterResult.data.description,
+            date: matterResult.data.date,
+            slug: matterResult.data.slug,
+            tags: matterResult.data.tags
         };
     });
 

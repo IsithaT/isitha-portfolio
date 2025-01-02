@@ -42,7 +42,7 @@ const Projects = () => {
                             
                             <div className='flex flex-col flex-1'>
                               <p className='prose prose-xl flex-1'>{post.description}</p>
-                              <Link href={"projects/project/"+post.slug} className='self-center' ><span className='p-[10px] w-[100px] rounded-2xl text-white bg-theme-accent w-20'>Project Article</span></Link>
+                              <Link href={"projects/project/"+post.slug} className='self-center' ><span className='p-[10px] w-[100px] rounded-2xl text-white bg-theme-accent'>Project Article</span></Link>
                             </div>
                         </div>
                         <ul className='flex w-full pt-3 gap-3'>

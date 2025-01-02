@@ -7,14 +7,14 @@ import Link from 'next/link';
 const projectDir = path.join(process.cwd(), 'src/projects');
 
 interface PostData {
+    id: string;
+    pageContent: string;
     title: string;
     image: string;
     description: string;
     date: string;
     slug: string;
     tags: string[];
-    id: string;
-    pageContent: string;
 }
 
 interface Props {
@@ -24,7 +24,7 @@ interface Props {
 }
 
 const ProjectPage = ({ params }: Props) => {
-    const postData: PostData = getSortedPostsData(projectDir).filter(post => post.slug === params.slug);
+    const postData: PostData[] = getSortedPostsData(projectDir).filter(post => post.slug === params.slug);
     
     return (
         <div className="flex flex-col h-screen w-full">
