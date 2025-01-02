@@ -4,7 +4,7 @@ import { MdAlternateEmail } from "react-icons/md";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen w-full align-middle">
+    <div className="flex flex-col h-screen w-full">
       <NavBar />
       <div className="flex h-screen w-full flex-col justify-center items-center">
         {/* Main Box */}
