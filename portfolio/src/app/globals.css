@@ -2,8 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f2f0ef;
+}
+
+.prose-full-width {
+  @apply prose;
+  @apply prose-lg;
+  max-width: 100%;
+  img {
+    justify-self: center;
+    border-radius: 10px;
+  }
+  blockquote {
+    padding: 20px;
+    box-shadow: none;
+    background-color: rgba(0,0,0,0.02);
+    border-radius: 10px;
+    border: rgba(0, 0, 0, 0.1) solid 4px;
+    quotes: none;
+  }
+}
+
+.bg-theme-accent {
+  @apply bg-[#A12347]
 }
