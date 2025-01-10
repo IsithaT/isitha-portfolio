@@ -13,7 +13,7 @@ const NavBar = () => {
           <Link className='nav-link' href="/projects">Projects</Link>
         </li>
         <li className='h-full flex-1 flex items-center justify-center'>
-          <Link className='nav-link' href="/education">Education & Experience</Link>
+          <Link className='nav-link' href="/experience">Education & Experience</Link>
         </li>
         <li className='h-full flex-1 flex items-center justify-center'>
           <Link className='nav-link' href="/contact">Contact</Link>
