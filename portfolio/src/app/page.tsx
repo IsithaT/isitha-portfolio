@@ -2,6 +2,8 @@ import NavBar from "@/components/NavBar";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdAlternateEmail } from "react-icons/md";
 
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="flex flex-col h-screen w-full">
@@ -33,7 +35,14 @@ export default function Home() {
               </div>
             </div>
             <div className="min-w-fit min-h-fit gap-3 flex flex-col justify-between items-end p-5">
-              <img className="grow object-cover w-[354px] rounded-2xl" src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpre00.deviantart.net%2Fb31f%2Fth%2Fpre%2Ff%2F2017%2F085%2Fe%2F4%2Fpixel_art_profile_image_by_lonezi-db3oypd.png&f=1&nofb=1&ipt=dfdcff8b2e6174b3ee851f6feed56c4962a325b440840367c48e0bcb5989d209&ipo=images' alt="placeholder" />
+              {/* <img className="grow object-cover w-[354px] rounded-2xl" src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpre00.deviantart.net%2Fb31f%2Fth%2Fpre%2Ff%2F2017%2F085%2Fe%2F4%2Fpixel_art_profile_image_by_lonezi-db3oypd.png&f=1&nofb=1&ipt=dfdcff8b2e6174b3ee851f6feed56c4962a325b440840367c48e0bcb5989d209&ipo=images' alt="placeholder" /> */}
+                <Image
+                className="grow object-cover w-[354px] rounded-xl" 
+                src="/images/profile-pic.png"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+                />
               <button
                 className="w-full relative px-8 py-2 isolation-auto z-10 border-2 border-red-700 
                 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full 
