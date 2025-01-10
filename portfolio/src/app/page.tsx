@@ -43,16 +43,22 @@ export default function Home() {
                 height={500}
                 alt="Picture of the author"
                 />
-              <button
-                className="w-full relative px-8 py-2 isolation-auto z-10 border-2 border-red-700 
-                before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full 
-                hover:text-white before:-left-full before:hover:left-0 before:rounded-full before:bg-[#A12347] 
-                before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 
-                inline-flex items-center justify-center text-sm font-semibold text-black rounded-lg shadow-sm 
-                gap-x-2 disabled:opacity-50 disabled:pointer-events-none transition-colors duration-700"
-              >
-                Resume
-              </button>
+              <a href="/files/Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full "
+                  >
+                <div
+                  className="w-full relative px-8 py-2 isolation-auto z-10 border-2 border-red-700
+                  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full
+                  hover:text-white before:-left-full before:hover:left-0 before:rounded-full before:bg-[#A12347]
+                  before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700
+                  inline-flex items-center justify-center text-sm font-semibold text-black rounded-lg shadow-sm
+                  gap-x-2 disabled:opacity-50 disabled:pointer-events-none transition-colors duration-700"
+                >
+                  Resume
+                </div>
+              </a>
             </div>
           </div>
         </div>
