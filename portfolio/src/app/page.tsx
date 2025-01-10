@@ -22,14 +22,14 @@ export default function Home() {
                Welcome to my portfolio site! Here you 
                can find info about me and some of the things I've done. <br /><br /> Happy Browsing! :D
               </p>
-              <div className="flex justify-between items-center">
-                <a href="">
+              <div className="flex justify-between items-center" title="GitHub">
+                <a href="https://github.com/IsithaT/">
                   <SiGithub className="w-[40px] h-[40px]" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/isithat/" title="Connect with me on LinkedIn">
                   <SiLinkedin className="w-[40px] h-[40px]" />
                 </a>
-                <a href="">
+                <a href="mailto:ilt@sfu.ca" title="Email">
                   <MdAlternateEmail className="w-[40px] h-[40px] p-0" />
                 </a>
               </div>

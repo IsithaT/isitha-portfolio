@@ -46,9 +46,9 @@ body {
 .nav-link {
   @apply p-[15px] h-full w-full flex items-center justify-center text-center 
     relative px-8 py-2 rounded-md isolation-auto z-10 border-2 border-black 
-    before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full 
-    hover:text-white before:-left-full before:hover:left-0 before:rounded-full before:bg-[#A12347] 
-    before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 
+    before:absolute before:w-full before:transition-opacity before:duration-300 
+    hover:text-white before:opacity-0 before:hover:opacity-100 before:rounded-md 
+    before:bg-[#A12347] before:-z-10 before:aspect-square overflow-hidden 
     text-sm font-semibold text-black shadow-sm gap-x-2 disabled:opacity-50 
-    disabled:pointer-events-none transition-colors duration-700;
+    disabled:pointer-events-none transition-colors duration-300;
 }

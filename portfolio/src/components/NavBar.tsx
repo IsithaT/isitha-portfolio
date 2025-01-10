@@ -15,9 +15,9 @@ const NavBar = () => {
         <li className='h-full flex-1 flex items-center justify-center'>
           <Link className='nav-link' href="/experience">Education & Experience</Link>
         </li>
-        <li className='h-full flex-1 flex items-center justify-center'>
+        {/* <li className='h-full flex-1 flex items-center justify-center'>
           <Link className='nav-link' href="/contact">Contact</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   )
