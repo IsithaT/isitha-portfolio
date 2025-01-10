@@ -2,7 +2,6 @@ import React from 'react'
 import NavBar from '@/components/NavBar'
 import { getSortedEducationData, getSortedExperienceData } from './articleParse';
 import path from 'path';
-import Link from "next/link";
 
 
 const experienceDir = path.join(process.cwd(), 'src/articles/experience');

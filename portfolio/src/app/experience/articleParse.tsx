@@ -79,7 +79,6 @@ import rehypeStringify from "rehype-stringify"
 import rehypeHighlight from 'rehype-highlight'
 
 import rehypeSanitize from "rehype-sanitize"
-import { Interface } from 'readline';
 
 export function ParseMDtoHTML(markdown: string) {
     const result = unified()
