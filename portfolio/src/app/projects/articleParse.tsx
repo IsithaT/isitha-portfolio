@@ -2,9 +2,6 @@ import matter from 'gray-matter'
 import fs from 'fs';
 import path from 'path';
 
-
-
-
 export function getSortedPostsData(directory: string) {
     // Get file names under /posts
     const fileNames = fs.readdirSync(directory)
@@ -48,7 +45,6 @@ import remarkParse from "remark-parse"
 import remarkRehype from "remark-rehype"
 import rehypeStringify from "rehype-stringify"
 import rehypeHighlight from 'rehype-highlight'
-
 import rehypeSanitize from "rehype-sanitize"
 
 export function ParseMDtoHTML(markdown: string) {
