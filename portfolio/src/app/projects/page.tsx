@@ -5,7 +5,7 @@ import path from 'path';
 import Link from "next/link";
 
 
-const projectDir = path.join(process.cwd(), 'src/projects');
+const projectDir = path.join(process.cwd(), 'src/articles/projects');
 
 interface PostData {
     title: string;
@@ -26,14 +26,14 @@ const Projects = () => {
             <NavBar />
             <div className="flex h-screen w-full flex-col items-center">
                 <span className='mt-[100px] prose'>
-                  <h1>Projects</h1>
+                  <h2>Projects</h2>
                 </span>
                 <div className="w-[65%] h-[100] min-h-fit flex flex-col gap-13 justify-between mt-[100px]">
                     {/* Render the parsed markdown data */}
                     {postsData.map(post => (
                       <div className='flex flex-col w-full mb-[80px]' key={post.id}>
                         <span className='prose pb-2'>
-                          <h1>{post.title}</h1>
+                          <h2>{post.title}</h2>
                         </span>
                         <div className='w-full flex justify-between gap-3'>
                             <div className='prose flex-1'>

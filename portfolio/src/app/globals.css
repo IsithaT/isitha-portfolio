@@ -18,17 +18,30 @@ body {
   blockquote {
     padding: 20px;
     box-shadow: none;
-    background-color: rgba(0,0,0,0.02);
+    background-color: rgba(0, 0, 0, 0.02);
     border-radius: 10px;
     border: rgba(0, 0, 0, 0.1) solid 4px;
     quotes: none;
   }
+  ul {
+    list-style-type: square;
+    color: black;
+  }
+  li {
+    /* color: black; */
+    p {
+      margin-bottom: 10px;
+      margin-top: 0px;
+    }
+  }
+  li::marker {
+    color: #444444;
+  }
 }
 
 .bg-theme-accent {
-  @apply bg-[#A12347]
+  @apply bg-[#A12347];
 }
-
 
 .nav-link {
   @apply p-[15px] h-full w-full flex items-center justify-center text-center 

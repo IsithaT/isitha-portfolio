@@ -4,7 +4,7 @@ import { getSortedPostsData } from '../../articleParse';
 import path from 'path';
 import Link from 'next/link';
 
-const projectDir = path.join(process.cwd(), 'src/projects');
+const projectDir = path.join(process.cwd(), 'src/articles/projects');
 
 interface PostData {
     id: string;
