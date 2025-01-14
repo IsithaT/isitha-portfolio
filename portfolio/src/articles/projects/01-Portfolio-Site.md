@@ -7,8 +7,6 @@ slug: "portfolio-site"
 tags: [Next JS, Tailwind CSS, NodeJS, Typescript, React]
 ---
 
-# Portfolio Site
-
 > ![portfolio site image](/images/PortfolioSite.png)
 
 This is just a short article on my portfolio site —the site you are currently on!
