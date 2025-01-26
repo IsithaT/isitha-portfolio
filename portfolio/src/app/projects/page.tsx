@@ -42,12 +42,12 @@ const Projects = () => {
                             
                             <div className='flex flex-col flex-1 gap-[15px]'>
                               <p className='prose prose-xl flex-1 overflow-clip'>{post.description}</p>
-                              <Link href={"projects/project/"+post.slug} className='self-center' ><span className='p-[10px] w-[100px] rounded-2xl text-white bg-theme-accent'>Project Article</span></Link>
+                              <Link href={"projects/project/"+post.slug} className='self-center' ><span className='p-[10px] w-[100px] rounded-xl text-white bg-theme-accent'>Project Article</span></Link>
                             </div>
                         </div>
                         <ul className='flex w-full pt-3 gap-3'>
                           {post.tags.map(tag => (
-                            <li className='p-1 rounded-full min-w-[80px] text-center bg-slate-400' key={post.tags.indexOf(tag)}><b>{tag}</b></li>
+                            <li className='px-2 py-1 rounded-lg font-mono min-w-[80px] text-center bg-gray-300 text-[#A12347]' key={post.tags.indexOf(tag)}><b>{tag}</b></li>
                           ))}
                         </ul>
                       </div>
