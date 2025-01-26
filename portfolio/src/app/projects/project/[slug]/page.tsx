@@ -34,7 +34,7 @@ const ProjectPage = async ({ params }: Props) => {
 
             <div className="flex h-screen w-full flex-col items-center">
                 <span className='mt-[100px] prose'>
-                  <h1>{postData[0].title}</h1>
+                  <h1 className='text-center'>{postData[0].title}</h1>
                 </span>
 
                 <div className="w-[65%] h-[100] min-h-fit flex flex-col gap-13 justify-between mt-[100px] pb-[200px]">
