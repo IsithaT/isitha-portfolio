@@ -1,7 +1,7 @@
 ---
 title: "Fitness4All"
 image: "/images/ffaHome.png"
-description: "An AI powered fitness a nutrition web app that helps you meet your health goals."
+description: "An AI powered fitness and nutrition web app that helps you meet your health goals."
 date: ""
 slug: "fitness4all"
 tags: [React, Jest, NodeJS, Gemini API, Spoonacular API]
