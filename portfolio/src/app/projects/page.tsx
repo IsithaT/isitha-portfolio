@@ -31,7 +31,7 @@ const Projects = () => {
                 <div className="w-[65%] h-[100] min-h-fit flex flex-col gap-13 justify-between mt-[100px]">
                     {/* Render the parsed markdown data */}
                     {postsData.map(post => (
-                      <div className='flex flex-col w-full mb-[80px]' key={post.id}>
+                      <div className='flex flex-col w-full mb-[80px] ' key={post.id}>
                         <span className='prose pb-2'>
                           <h2>{post.title}</h2>
                         </span>
