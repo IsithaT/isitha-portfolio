@@ -32,7 +32,7 @@ The file API then authenticates the JWT with firebase to ensure the user is who 
 
 ## Self Hosting Everything
 
-I currently have the project self-hosted on my little mini PC homelab. One of my goals with this project was to have it cost zero dollars to keep up and running (lets ignore electricity for now 😉). For object storage, this meant going with MinIO. I was drawn to MinIO because its S3 compatible, meaning if I ever wanted to switch to a AWS S3 cloud solution, I'd have to modify very little.
+I currently have the project self-hosted on my little mini PC homelab. One of my goals with this project was to have it cost zero dollars to keep up and running. For object storage, this meant going with MinIO. I was drawn to MinIO because its S3 compatible, meaning if I ever wanted to switch to a AWS S3 cloud solution, I'd have to modify very little.
 
 Postgres is likewise also deployed on the server with docker. The file deletion worker, file api, and client app are all deployed in their own containers and operate together through APIs or by writing and reading from a job queue.
 
