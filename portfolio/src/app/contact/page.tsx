@@ -1,26 +1,24 @@
 import React from 'react'
 import NavBar from '@/components/NavBar'
 
-const Contact = () => {
-
+const RavAura = () => {
+    const aura = -10000000000000;
 
     return (
-        <div className="flex flex-col h-screen w-full">
+        <div className="flex flex-col h-screen w-full bg-black text-white">
             <NavBar />
-            <div className="flex h-screen w-full flex-col items-center">
-                <span className='mt-[100px] prose'>
-                  <h2>Education & Experience</h2>
-                </span>
-                <div className="w-[65%] h-[100] min-h-fit flex flex-col gap-13 justify-between mt-[100px]">
-                    <div className="prose-full-width flex flex-col justify-center">
-                        <h4>Reach out to me by email</h4>
-                        <p>ilt[at]sfu.ca</p>
-                        <p>Or connect with me on <a href="https://www.linkedin.com/in/isithat/">LinkedIn</a> and send me a message</p>
-                    </div>
+            <div className="flex flex-col items-center justify-center h-full">
+                <h1 className="text-4xl font-bold mb-6">Rav's Aura Tracker</h1>
+                <div className="bg-red-900 p-6 rounded-2xl shadow-xl">
+                    <p className="text-xl font-mono">Aura Level:</p>
+                    <p className="text-5xl font-bold text-red-300 mt-2">{aura.toLocaleString()}</p>
                 </div>
+                <p className="mt-10 text-sm italic opacity-70">
+                    This aura reading is permanent. Please do not attempt to intervene.
+                </p>
             </div>
         </div>
-    )
+    );
 }
 
-export default Contact
+export default RavAura;
