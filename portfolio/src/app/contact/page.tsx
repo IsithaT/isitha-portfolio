@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from '@/components/NavBar'
 
 const RavAura = () => {
-    const aura = -10000000000000;
+    const aura = "gullible, additional -5 aura";
 
     return (
         <div className="flex flex-col h-screen w-full bg-black text-white">
