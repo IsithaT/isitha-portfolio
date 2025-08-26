@@ -1,68 +1,63 @@
 import NavBar from "@/components/NavBar";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdAlternateEmail } from "react-icons/md";
-
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen w-full">
+    <div className="flex flex-col min-h-screen w-full font-sans bg-white">
       <NavBar />
-      <div className="flex h-screen w-full flex-col justify-center items-center">
-        {/* Main Box */}
-        <div className="w-[65%] h-[60%] min-h-fit flex flex-col gap-13 justify-between">
-          <div className="flex h-full w-full justify-between">
-            <div className="flex flex-col justify-between h-full w-min p-5">
-              <h1 className="text-7xl">
-                Isitha <br/>
-                Tennakoon
-              </h1>
-              <p className="text-lg text-justify">
-               I am a second year CS Student at SFU.
-               Welcome to my portfolio site! Here you 
-               can find info about me and some of the things I've done. <br /><br /> Happy Browsing! :D
-              </p>
-              <div className="flex justify-between items-center" title="GitHub">
-                <a href="https://github.com/IsithaT/">
-                  <SiGithub className="w-[40px] h-[40px]" />
-                </a>
-                <a href="https://www.linkedin.com/in/isithat/" title="Connect with me on LinkedIn">
-                  <SiLinkedin className="w-[40px] h-[40px]" />
-                </a>
-                <a href="mailto:ilt@sfu.ca" title="Email">
-                  <MdAlternateEmail className="w-[40px] h-[40px] p-0" />
-                </a>
-              </div>
-            </div>
-            <div className="min-w-fit min-h-fit gap-3 flex flex-col justify-between items-end p-5">
-              {/* <img className="grow object-cover w-[354px] rounded-2xl" src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpre00.deviantart.net%2Fb31f%2Fth%2Fpre%2Ff%2F2017%2F085%2Fe%2F4%2Fpixel_art_profile_image_by_lonezi-db3oypd.png&f=1&nofb=1&ipt=dfdcff8b2e6174b3ee851f6feed56c4962a325b440840367c48e0bcb5989d209&ipo=images' alt="placeholder" /> */}
-                <Image
-                className="grow object-cover w-[354px] rounded-xl" 
-                src="/images/profile-pic.png"
-                width={500}
-                height={500}
-                alt="Picture of the author"
-                />
-              <a href="/files/Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full "
-                  >
-                <div
-                  className="w-full relative px-8 py-2 isolation-auto z-10 border-2 border-red-700
-                  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full
-                  hover:text-white before:-left-full before:hover:left-0 before:rounded-full before:bg-[#A12347]
-                  before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700
-                  inline-flex items-center justify-center text-sm font-semibold text-black rounded-lg shadow-sm
-                  gap-x-2 disabled:opacity-50 disabled:pointer-events-none transition-colors duration-700"
-                >
-                  Resume
-                </div>
+
+      <main className="flex flex-1 items-center justify-center px-6 md:px-16 py-12">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-16 w-full max-w-6xl">
+          {/* Left Panel: Name + Bio + Socials */}
+          <div className="flex flex-col items-center md:items-start gap-6 text-center md:text-left max-w-lg">
+            <h1 className="text-6xl md:text-7xl font-bold leading-tight">
+              Isitha <br /> Tennakoon
+            </h1>
+
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              I am a second-year CS Student at SFU. Welcome to my portfolio site! Here you
+              can find info about me and some of the things I've done. <br /><br /> Happy Browsing! :D
+            </p>
+
+            <div className="flex gap-6 mt-2">
+              <a href="https://github.com/IsithaT/" title="GitHub">
+                <SiGithub className="w-10 h-10 hover:text-red-700 transition-colors" />
+              </a>
+              <a href="https://www.linkedin.com/in/isithat/" title="LinkedIn">
+                <SiLinkedin className="w-10 h-10 hover:text-blue-700 transition-colors" />
+              </a>
+              <a href="mailto:ilt@sfu.ca" title="Email">
+                <MdAlternateEmail className="w-10 h-10 hover:text-green-700 transition-colors" />
               </a>
             </div>
           </div>
+
+          {/* Right Panel: Image + Resume */}
+          <div className="flex flex-col items-center gap-6 w-full max-w-xs">
+            <div className="w-full relative pb-[140%] rounded-xl overflow-hidden">
+              <Image
+                src="/images/profile-pic.png"
+                alt="Picture of the author"
+                fill
+                className="object-cover rounded-xl"
+              />
+            </div>
+
+            <a
+              href="/files/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
+            >
+              <div className="w-full text-center px-6 py-3 border-2 border-red-700 rounded-lg text-black font-semibold hover:bg-red-700 hover:text-white transition-colors">
+                Resume
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 }

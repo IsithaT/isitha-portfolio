@@ -1,26 +1,46 @@
-// filepath: /home/isitha/Code/PortfolioSite/isitha-portfolio/portfolio/src/components/NavBar.tsx
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
 const NavBar = () => {
   return (
-    <nav className='w-full'>
-      <ul className='h-[40px] flex flex-wrap justify-around items-center gap-[40px] mx-[40px] mt-[30px]'>
-        <li className='h-full flex-1 flex items-center justify-center'>
-          <Link className='nav-link' href="/">Home</Link>
+    <nav className="w-full px-6 md:px-16 py-4 bg-white shadow-sm">
+      <ul className="flex flex-wrap md:flex-nowrap justify-center md:justify-around items-center gap-6 md:gap-16">
+        <li>
+          <Link
+            href="/"
+            className="text-gray-800 font-semibold text-lg md:text-xl hover:text-[#A12347] transition-colors"
+          >
+            Home
+          </Link>
         </li>
-        <li className='h-full flex-1 flex items-center justify-center'>
-          <Link className='nav-link' href="/projects">Projects</Link>
+        <li>
+          <Link
+            href="/projects"
+            className="text-gray-800 font-semibold text-lg md:text-xl hover:text-[#A12347] transition-colors"
+          >
+            Projects
+          </Link>
         </li>
-        <li className='h-full flex-1 flex items-center justify-center'>
-          <Link className='nav-link' href="/experience">Education & Experience</Link>
+        <li>
+          <Link
+            href="/experience"
+            className="text-gray-800 font-semibold text-lg md:text-xl hover:text-[#A12347] transition-colors"
+          >
+            Education & Experience
+          </Link>
         </li>
-        {/* <li className='h-full flex-1 flex items-center justify-center'>
-          <Link className='nav-link' href="/contact">Contact</Link>
+        {/* Uncomment if needed
+        <li>
+          <Link
+            href="/contact"
+            className="text-gray-800 font-semibold text-lg md:text-xl hover:text-[#A12347] transition-colors"
+          >
+            Contact
+          </Link>
         </li> */}
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
